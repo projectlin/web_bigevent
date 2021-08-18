@@ -51,7 +51,7 @@ $(function() {
             data: $(this).serialize(), //注意这种快捷写法
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('res.message')
+                    return layer.msg('密码错误')
                 }
                 // console.log(res.token);
                 layer.msg('登录成功')
